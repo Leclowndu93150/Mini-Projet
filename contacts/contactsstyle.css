@@ -1,0 +1,47 @@
+.marge{
+  margin: 3%;
+}
+.form {
+  display: flex;          
+  flex-direction: column;
+  gap: 7px;
+  flex-grow: 1;           
+}
+
+h1 {
+  text-align: center;
+}
+
+.contacte{
+  display: flex;
+  align-items: stretch;
+  gap: 3%;
+  margin-top: 25px;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  
+}
+
+#message{
+  flex: 1;
+  resize: none;
+}
+
+
+.gauche, .droite{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gauche img, .droite img{ 
+    flex: 1;
+    width: 100%;
+    height: auto;
+    
+}
