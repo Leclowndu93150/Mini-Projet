@@ -3,6 +3,10 @@
   width: 95%;
 }
 
+.page2{
+   width: 98%;
+}
+
 .outline{
   border: 2px solid rgb(97, 46, 46);
   margin: 10px auto;
@@ -11,19 +15,23 @@
 
 .titre{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 }
 
-.tableau{
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    width: fit-content;
+.dansTitre{
+  padding-left: 10px;
 }
 
 .tableau {
+  text-align: center;
   border-collapse: collapse;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
 }
 
 th,
@@ -36,4 +44,20 @@ td {
   background-color: #6d2e2e;
   color: white;
   font-weight: bold;
+}
+
+.ligne {
+  border-top: 2px solid rgb(97, 46, 46);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.img-side {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
 }
