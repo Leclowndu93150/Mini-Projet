@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <meta charset="UTF-8">
     <title> Contacts</title>
 	<link rel="stylesheet" href="contactsstyle.css">
+    <link rel="stylesheet" href="../styles.css">
    </head>
    <body>
-
-    <div>
+    <header>
+      <div>
+        <img src="../assets/images/Logo_IUT_ACT_couleurs.png" alt="Logo IUT" />
+        <img src="../assets/images/pastille-UT.png" alt="Logo Université" />
+      </div>
+      <div class="menu">
+        <nav>
+          <ul class="onglets-menu">
+            <li><a href="./accueil/accueil.html">Accueil</a></li>
+            <li>
+              <a href="./presentation/presentation.html">Présentation du BUT</a>
+            </li>
+            <li><a href="./competences/competences.html">Compétences</a></li>
+            <li><a href="./contacts/contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+    <div class="all">
 		<h1>Contacts</h1>
         <div class="marge">
-            <h2>formulaire de contact</h2>
+            <h2><strong class="no-bold">Formulaire</strong> de contact</h2>
             <div class="contacte">
                 <div class="form">
                     <label for="nom">Votre nom :</label>
-                    <input type="text" id="name" name="name"/>
+                    <input type="text" placeholder="Entrez votre nom" id="nom" name="name" class="formulaire"/>
                     <label for="prénom">Votre prénom :</label>
-                    <input type="text" id="prénom" name="prénom"/>
+                    <input type="text" placeholder="Entrez votre prénom" id="prénom" name="prénom" class="formulaire"/>
                     <label for="email">Votre email :</label>
-                    <input type="email" id="email" name="email"/>
-                    <input type="submit" name="submit"/>
+                    <input type="email" placeholder="Entrez votre email" id="email" name="email" class="formulaire"/>
+                    <input type="submit" name="submit" class="bouton"/>
                 </div>
                 <div class="message">
                     <label for="message">Votre message :</label>
@@ -29,16 +49,17 @@
             </div>
             <div class="contacte">
                 <div class="gauche">
-                    <img src="IUT.jpg" />
+                    <img src="IUT.jpg" alt="Photo de la façade de l'Iut informatique" />
                 </div>
                 <div class="droite">
-                    <p> adresse de l'IUT informatique :</p>
-                    <p>  Département Informatique, 133 B Av. de Rangueil BP 67701, 31077 Toulouse cedex 4 </p>
-                    <img src="map.png" />
+                    <p><u><b>Adresse de l'IUT informatique :</b></u></p>
+                    <p> Département Informatique, 133 B Av. de Rangueil BP 67701, 31077 Toulouse cedex 4 </p>
+                    <img src="map.png" alt="map situant l'iut informatique"/>
                 </div>
             </div>
         </div>
 
     </div>
+    </main>
  </body>
 </html>
