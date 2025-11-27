@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
 }
 
-
 /* --- HEADER --- */
 
 header {
@@ -41,12 +40,14 @@ header img {
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .onglets-menu li {
+    margin: 1%;
     padding: 1% 5%;
-    border: 1px solid black; 
-    margin: 0 2%;
+    cursor: pointer;
 }
 
 .onglets-menu a {
@@ -57,11 +58,118 @@ header img {
 .onglets-menu li:hover, .onglets-menu li a:hover {
     background-color: red;
     color: white;  
-}   
+}
 
 
 
+/* --- FOOTER --- */
 
+footer.footer {
+  display: flex;                
+  justify-content: space-around;
+  align-items: center;           
+  padding: 1rem 2rem;
+  background-color: grey;
+  color: #f5f5f5;
+  font-size: 0.8rem;
+}
 
+.onglets-footer {
+    list-style-type: none;
+}
 
+.onglets-footer li {
+  padding-bottom: 5%;
+}
 
+.onglets-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.onglets-footer li:hover, .onglets-footer li a:hover {
+    background-color: red;
+    color: white;  
+}
+
+.footer-left { 
+  text-align: left; 
+}
+
+.footer-centre, .footer-centre a { 
+  text-align: center; 
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-centre a:hover {
+  color: red;
+}
+
+.footer-droite { 
+  text-align: right; 
+}
+
+.footer-gauche, .footer-droite {
+  min-width: 150px; 
+}
+
+/* --- RESPONSIVE --- */
+
+@media screen and (max-width: 768px) {
+   header {
+      padding: 0 2%;
+    }
+    
+    header img {
+        width: 60px;
+    }
+    
+    .menu {
+        margin: 3% 2%;
+        font-size: 100%;
+    }
+    
+    .onglets-menu {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .onglets-menu li {
+        width: 100%;
+        text-align: center;
+        padding: 3% 0;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid black;
+    }
+    
+
+    
+    .onglets-menu li:last-child {
+        border-bottom: none;
+    }
+    
+    footer.footer {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .footer-gauche, .footer-droite {
+        min-width: auto;
+        text-align: center;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        font-size: 90%;
+    }
+    
+    header img {
+        width: 50px;
+    }
+}
