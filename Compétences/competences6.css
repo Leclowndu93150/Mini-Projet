@@ -46,10 +46,6 @@ li {
     border-radius: 5px;
 }
 
-.Séparateur_Ressources {
-    border-top: 2px dotted  #8398ad;
-}
-
 .Apprentissage_Critique {
     display : flex;
     flex-direction: row;
