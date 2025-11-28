@@ -100,6 +100,11 @@ td {
   align-items: center;
 }
 
+.bloc-competence {
+  border-radius: 20px;
+  box-shadow: 2px 2px 7px 0 grey;
+}
+
 .bloc-competence .grid {
   flex: 1;
 }
@@ -107,12 +112,14 @@ td {
 .bloc-competence .outline.dansTitre {
   text-align: center;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .bloc-competence .titre-competence {
   grid-column: 1 / -1;
   font-size: 1.2em;
   padding: 15px;
+  border-radius: 15px;
 }
 
 
