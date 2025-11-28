@@ -61,3 +61,36 @@ td {
   height: auto;
   object-fit: cover;
 }
+
+ @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .img-side {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .tableau {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .row {
+      padding: 5px;
+    }
+    .dansTitre {
+      padding: 5px;
+    }
+    .img-side {
+      max-width: 100%;
+    }
+  }
