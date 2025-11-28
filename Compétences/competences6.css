@@ -37,7 +37,7 @@ p {
 li {
     padding: 2px;
     margin-left: 100px;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .Separateur {
@@ -159,6 +159,17 @@ th,td {
     outline: 2px ridge #fdcf41;
     border-radius: 2rem;
     background-color: #fdcf41;
+}
+
+.Compétence4 {
+    max-width: 550px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-self: center;
+    text-align: center;
+    outline: 2px ridge #91ae4f;
+    border-radius: 2rem;
+    background-color: #91ae4f;
 }
 
 .Compétence5 {
