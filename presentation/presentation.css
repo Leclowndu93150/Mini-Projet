@@ -95,7 +95,7 @@ td {
     }
   }
 
-/* Blocs compétences */
+
 .row {
   align-items: center;
 }
@@ -115,7 +115,7 @@ td {
   padding: 15px;
 }
 
-/* Couleurs des compétences */
+
 .bloc-c1 {
   background-color: #ecd0c9;
 }
@@ -166,7 +166,7 @@ td {
   color: white;
 }
 
-/* Couleurs colonnes tableau */
+
 .tableau tr:first-child td.c1 {
   background-color: #d08a77;
 }
@@ -188,7 +188,7 @@ td {
   color: white;
 }
 
-/* Couleurs cellules avec valeurs */
+
 .tableau td.c1-light {
   background-color: #ecd0c9;
 }
