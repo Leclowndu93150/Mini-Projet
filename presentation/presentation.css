@@ -109,6 +109,12 @@ td {
   padding: 10px;
 }
 
+.bloc-competence .titre-competence {
+  grid-column: 1 / -1;
+  font-size: 1.2em;
+  padding: 15px;
+}
+
 /* Couleurs des compétences */
 .bloc-c1 {
   background-color: #ecd0c9;
@@ -180,4 +186,24 @@ td {
 .tableau tr:first-child td.c6 {
   background-color: #a26859;
   color: white;
+}
+
+/* Couleurs cellules avec valeurs */
+.tableau td.c1-light {
+  background-color: #ecd0c9;
+}
+.tableau td.c2-light {
+  background-color: #ffe0d6;
+}
+.tableau td.c3-light {
+  background-color: #fef3cd;
+}
+.tableau td.c4-light {
+  background-color: #c8d7a7;
+}
+.tableau td.c5-light {
+  background-color: #d6e0f5;
+}
+.tableau td.c6-light {
+  background-color: #e8d8d4;
 }
