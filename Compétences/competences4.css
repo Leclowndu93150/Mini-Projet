@@ -1,7 +1,15 @@
+main {
+    max-width:90%;
+    align-self: center;
+}
+
 h1 {
     padding: 2px;
-    background-color: #d08a77;
-    color: black;
+    border-style: outset;
+    border-color: #c8d7a7;
+    background-color: #91ae4f;
+    text-align: center;
+    border-radius: 20px;
 }
 
 
@@ -9,9 +17,10 @@ h1 {
 h2 {
     padding: 2px;
     border-style: outset;
-    border-color: #ecd0c9;
-    background-color: #d08a77;
+    border-color: #c8d7a7;
+    background-color: #91ae4f;
     text-align: center;
+    border-radius: 20px;
 }
 
 h3 {
@@ -28,31 +37,34 @@ p {
 li {
     padding: 2px;
     margin-left: 100px;
+    margin-right: auto;
 }
 
-hr {
-    border-top: 5px double black;
+.Separateur {
+    margin-top: 10px;
+    border-top: 10px solid  #8398ad;
+    border-radius: 5px;
 }
 
 .Séparateur_Ressources {
-    border-top: 2px dashed black;
+    border-top: 2px dotted  #8398ad;
 }
 
 .Apprentissage_Critique {
     display : flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px 0 grey;
+    background-color: #c8d7a7;
+
 }
 
-img {
+.Image_App_Crit {
     border: 2px solid black;
-    width: 480px;
-    height: 252px;
-}
-
-.Liste {
-    background-color: #ecd0c9;
+    width: auto;
+    height: auto;
 }
 
 .Ressources {
@@ -61,14 +73,25 @@ img {
 }
 
 .Tableau {
+    padding: 1.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ecd0c9;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px 0 grey;
+    background-color: #c8d7a7;
 }
 
 .Tableau caption {
     font-weight : bold;
+}
+
+.Tab_Ressources {
+    background-color: #8398ad;
+}
+
+.Tab_Coeffs {
+    background-color: white;
 }
 
 table {
@@ -87,13 +110,21 @@ th,td {
 
 }
 
+.Tableau_PPP {
+    background-color: #8398ad;
+}
+
 .SAE {
     display: flex;
     flex-direction: column;
 }
 
 .Texte {
-        background-color: #ecd0c9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px 0 grey;
+    background-color: #c8d7a7;
 }
 
 .Precision_Ressources {
@@ -101,19 +132,11 @@ th,td {
     flex-direction: column;
 }
 
-.Tab_Ressources {
-    background-color: lightgrey;
-}
-
-.Tab_Coeffs {
-    background-color: white;
-}
-
 .Compétence1 {
-    margin-right: auto;
+    max-width: 550px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 100px;    
+    align-self: center;
     text-align: center;
     outline: 2px ridge #d08a77;
     border-radius: 2rem;
@@ -121,10 +144,10 @@ th,td {
 }
 
 .Compétence2 {
-    margin-right: auto;
+    max-width: 550px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 100px;    
+    align-self: center;
     text-align: center;
     outline: 2px ridge #ff6f4c;
     border-radius: 2rem;
@@ -132,21 +155,32 @@ th,td {
 }
 
 .Compétence3 {
-    margin-right: auto;
+    max-width: 550px;
     margin-top: 5px;
-    margin-left: 100px;   
     margin-bottom: 5px;
+    align-self: center;
     text-align: center;
     outline: 2px ridge #fdcf41;
     border-radius: 2rem;
     background-color: #fdcf41;
 }
 
-.Compétence5 {
-    margin-right: auto;
+.Compétence4 {
+    max-width: 550px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 100px;    
+    align-self: center;
+    text-align: center;
+    outline: 2px ridge #91ae4f;
+    border-radius: 2rem;
+    background-color: #91ae4f;
+}
+
+.Compétence5 {
+    max-width: 550px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-self: center;
     text-align: center;
     outline: 2px ridge #5770be;
     border-radius: 2rem;
@@ -154,10 +188,10 @@ th,td {
 }
 
 .Compétence6 {
-    margin-right: auto;
+    max-width: 550px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 100px;
+    align-self: center;
     text-align: center;
     outline: 2px ridge #a26859;
     border-radius: 2rem;
